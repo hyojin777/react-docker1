@@ -25,7 +25,7 @@ jobs:
             REPO_URL="https://github.com/hyojin777/react-docker1.git"
             DEV_PORT=5173
             
-            if [! -d "$APP_DIR/.git"]; then
+            if [ ! -d "$APP_DIR/.git" ]; then
               sudo mkdir -p $APP_DIR
               sudo chown -R $USER:$USER $APP_DIR
               git clone $REPO_URL $APP_DIR
